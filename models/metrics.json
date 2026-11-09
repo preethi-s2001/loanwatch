@@ -1,0 +1,338 @@
+{
+  "split_summary": {
+    "Train": {
+      "rows": 36748,
+      "distinct_loans": 3599,
+      "positives": 4615,
+      "default_rate_pct": 12.56
+    },
+    "Validation": {
+      "rows": 7228,
+      "distinct_loans": 2101,
+      "positives": 876,
+      "default_rate_pct": 12.12
+    },
+    "Test_OOT": {
+      "rows": 5432,
+      "distinct_loans": 1492,
+      "positives": 613,
+      "default_rate_pct": 11.28
+    }
+  },
+  "operating_threshold": 0.3,
+  "validation_metrics": {
+    "DPD_Only_Baseline": {
+      "pr_auc": 0.685,
+      "roc_auc": 0.932,
+      "brier_score": 0.0598,
+      "threshold": 0.3,
+      "precision": 0.6311,
+      "recall": 0.6758,
+      "f1": 0.6527,
+      "tp": 592,
+      "fp": 346,
+      "tn": 6006,
+      "fn": 284
+    },
+    "DPD_Only_Calibrated": {
+      "pr_auc": 0.685,
+      "roc_auc": 0.932,
+      "brier_score": 0.0598,
+      "threshold": 0.3,
+      "precision": 0.6311,
+      "recall": 0.6758,
+      "f1": 0.6527,
+      "tp": 592,
+      "fp": 346,
+      "tn": 6006,
+      "fn": 284
+    },
+    "Logistic_Regression": {
+      "pr_auc": 0.6739,
+      "roc_auc": 0.9324,
+      "brier_score": 0.0597,
+      "threshold": 0.3,
+      "precision": 0.5992,
+      "recall": 0.7169,
+      "f1": 0.6528,
+      "tp": 628,
+      "fp": 420,
+      "tn": 5932,
+      "fn": 248
+    },
+    "Logistic_Regression_Calibrated": {
+      "pr_auc": 0.6739,
+      "roc_auc": 0.9324,
+      "brier_score": 0.0596,
+      "threshold": 0.3,
+      "precision": 0.6004,
+      "recall": 0.7032,
+      "f1": 0.6477,
+      "tp": 616,
+      "fp": 410,
+      "tn": 5942,
+      "fn": 260
+    },
+    "Decision_Tree": {
+      "pr_auc": 0.6665,
+      "roc_auc": 0.9352,
+      "brier_score": 0.0559,
+      "threshold": 0.3,
+      "precision": 0.5793,
+      "recall": 0.7922,
+      "f1": 0.6692,
+      "tp": 694,
+      "fp": 504,
+      "tn": 5848,
+      "fn": 182
+    },
+    "Decision_Tree_Calibrated": {
+      "pr_auc": 0.6665,
+      "roc_auc": 0.9352,
+      "brier_score": 0.0582,
+      "threshold": 0.3,
+      "precision": 0.6309,
+      "recall": 0.6906,
+      "f1": 0.6594,
+      "tp": 605,
+      "fp": 354,
+      "tn": 5998,
+      "fn": 271
+    },
+    "Random_Forest": {
+      "pr_auc": 0.6912,
+      "roc_auc": 0.9384,
+      "brier_score": 0.0559,
+      "threshold": 0.3,
+      "precision": 0.5881,
+      "recall": 0.7774,
+      "f1": 0.6696,
+      "tp": 681,
+      "fp": 477,
+      "tn": 5875,
+      "fn": 195
+    },
+    "Random_Forest_Calibrated": {
+      "pr_auc": 0.6912,
+      "roc_auc": 0.9384,
+      "brier_score": 0.058,
+      "threshold": 0.3,
+      "precision": 0.635,
+      "recall": 0.6952,
+      "f1": 0.6638,
+      "tp": 609,
+      "fp": 350,
+      "tn": 6002,
+      "fn": 267
+    }
+  },
+  "model_comparison": {
+    "DPD_Only_Baseline": {
+      "pr_auc": 0.6852,
+      "roc_auc": 0.9403,
+      "brier_score": 0.057,
+      "threshold": 0.3,
+      "precision": 0.5949,
+      "recall": 0.7162,
+      "f1": 0.6499,
+      "tp": 439,
+      "fp": 299,
+      "tn": 4520,
+      "fn": 174
+    },
+    "DPD_Only_Calibrated": {
+      "pr_auc": 0.6852,
+      "roc_auc": 0.9403,
+      "brier_score": 0.0568,
+      "threshold": 0.3,
+      "precision": 0.5949,
+      "recall": 0.7162,
+      "f1": 0.6499,
+      "tp": 439,
+      "fp": 299,
+      "tn": 4520,
+      "fn": 174
+    },
+    "Logistic_Regression": {
+      "pr_auc": 0.6933,
+      "roc_auc": 0.9422,
+      "brier_score": 0.056,
+      "threshold": 0.3,
+      "precision": 0.5707,
+      "recall": 0.7439,
+      "f1": 0.6459,
+      "tp": 456,
+      "fp": 343,
+      "tn": 4476,
+      "fn": 157
+    },
+    "Logistic_Regression_Calibrated": {
+      "pr_auc": 0.6933,
+      "roc_auc": 0.9422,
+      "brier_score": 0.0556,
+      "threshold": 0.3,
+      "precision": 0.5834,
+      "recall": 0.7357,
+      "f1": 0.6508,
+      "tp": 451,
+      "fp": 322,
+      "tn": 4497,
+      "fn": 162
+    },
+    "Decision_Tree": {
+      "pr_auc": 0.6775,
+      "roc_auc": 0.9487,
+      "brier_score": 0.0516,
+      "threshold": 0.3,
+      "precision": 0.55,
+      "recall": 0.8075,
+      "f1": 0.6543,
+      "tp": 495,
+      "fp": 405,
+      "tn": 4414,
+      "fn": 118
+    },
+    "Decision_Tree_Calibrated": {
+      "pr_auc": 0.6775,
+      "roc_auc": 0.9487,
+      "brier_score": 0.053,
+      "threshold": 0.3,
+      "precision": 0.603,
+      "recall": 0.7308,
+      "f1": 0.6608,
+      "tp": 448,
+      "fp": 295,
+      "tn": 4524,
+      "fn": 165
+    },
+    "Random_Forest": {
+      "pr_auc": 0.6913,
+      "roc_auc": 0.9433,
+      "brier_score": 0.0522,
+      "threshold": 0.3,
+      "precision": 0.5673,
+      "recall": 0.7912,
+      "f1": 0.6608,
+      "tp": 485,
+      "fp": 370,
+      "tn": 4449,
+      "fn": 128
+    },
+    "Random_Forest_Calibrated": {
+      "pr_auc": 0.6913,
+      "roc_auc": 0.9433,
+      "brier_score": 0.0539,
+      "threshold": 0.3,
+      "precision": 0.6178,
+      "recall": 0.7145,
+      "f1": 0.6626,
+      "tp": 438,
+      "fp": 271,
+      "tn": 4548,
+      "fn": 175
+    }
+  },
+  "calibration_analysis": {
+    "best_model": {
+      "name": "Random_Forest",
+      "validation_pr_auc": 0.6912,
+      "validation_brier": 0.0559,
+      "test_pr_auc": 0.6913,
+      "test_brier": 0.0522,
+      "test_recall_at_0_30": 0.7912
+    },
+    "dpd_only_baseline": {
+      "validation_pr_auc": 0.685,
+      "validation_brier": 0.0598,
+      "test_pr_auc": 0.6852,
+      "test_brier": 0.057,
+      "test_recall_at_0_30": 0.7162
+    }
+  },
+  "calibration_curve": {
+    "prob_true": [
+      0.0043,
+      0.1451,
+      0.1973,
+      0.3292,
+      0.4413,
+      0.4842,
+      0.4,
+      0.7347,
+      0.8485
+    ],
+    "prob_pred": [
+      0.0086,
+      0.1765,
+      0.2341,
+      0.3518,
+      0.4589,
+      0.5251,
+      0.6719,
+      0.7657,
+      0.8531
+    ]
+  },
+  "feature_importances": {
+    "days_past_due": 0.2623,
+    "days_late": 0.1989,
+    "dpd_trend_3m": 0.1231,
+    "max_days_late_3m": 0.0986,
+    "bounces_last_3m": 0.0858,
+    "mean_days_late_3m": 0.0702,
+    "max_days_late_6m": 0.0564,
+    "bounces_last_6m": 0.0204,
+    "mean_days_late_6m": 0.0204,
+    "recent_deterioration_flag": 0.0192,
+    "tenure_remaining": 0.0113,
+    "outstanding_to_loan_ratio": 0.0096,
+    "emi_to_income_ratio": 0.0084,
+    "late_payments_last_3m": 0.0064,
+    "late_payments_last_6m": 0.0045,
+    "months_on_book": 0.0043,
+    "new_loan_flag": 0.0001
+  },
+  "recommended_model": {
+    "name": "Random_Forest",
+    "rationale": "Selected 'Random_Forest' programmatically on the Validation partition: achieved primary Validation PR-AUC of 0.6912 and secondary Brier score of 0.0559, compared to the DPD-Only Baseline (Val PR-AUC: 0.6850, Brier: 0.0598). On the held-out Out-of-Time Test set, it achieved PR-AUC 0.6913 and Brier 0.0522 (vs Baseline Test PR-AUC: 0.6852). In this synthetic portfolio, delinquency metrics (days_past_due, days_late, dpd_trend_3m) dominate the predictive signal, while recent auto-debit bounces provide incremental discrimination.",
+    "validation_metrics": {
+      "pr_auc": 0.6912,
+      "roc_auc": 0.9384,
+      "brier_score": 0.0559,
+      "threshold": 0.3,
+      "precision": 0.5881,
+      "recall": 0.7774,
+      "f1": 0.6696,
+      "tp": 681,
+      "fp": 477,
+      "tn": 5875,
+      "fn": 195
+    },
+    "test_metrics": {
+      "pr_auc": 0.6913,
+      "roc_auc": 0.9433,
+      "brier_score": 0.0522,
+      "threshold": 0.3,
+      "precision": 0.5673,
+      "recall": 0.7912,
+      "f1": 0.6608,
+      "tp": 485,
+      "fp": 370,
+      "tn": 4449,
+      "fn": 128
+    },
+    "dpd_only_baseline_test_metrics": {
+      "pr_auc": 0.6852,
+      "roc_auc": 0.9403,
+      "brier_score": 0.057,
+      "threshold": 0.3,
+      "precision": 0.5949,
+      "recall": 0.7162,
+      "f1": 0.6499,
+      "tp": 439,
+      "fp": 299,
+      "tn": 4520,
+      "fn": 174
+    }
+  }
+}

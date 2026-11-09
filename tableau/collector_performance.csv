@@ -1,0 +1,9 @@
+collector_id,total_assigned,high_risk_assigned,medium_risk_assigned,low_risk_assigned,pending_followups,promised_to_pay,no_answer,completed_followups,total_outstanding_managed,high_risk_outstanding,completion_rate_pct
+COL_101,159,10,14,135,159,0,0,0,23945760.59,2402718.48,0.0
+COL_102,151,6,14,131,151,0,0,0,22507008.27,827805.95,0.0
+COL_103,152,10,9,133,152,0,0,0,22743635.3,2155716.12,0.0
+COL_104,154,8,12,134,154,0,0,0,23950171.35,1309912.82,0.0
+COL_105,156,13,15,128,156,0,0,0,25136103.2,3599572.74,0.0
+COL_106,163,10,10,143,163,0,0,0,25012813.02,1242861.97,0.0
+COL_107,149,10,14,125,149,0,0,0,24869007.64,1905399.9,0.0
+COL_108,139,8,15,116,139,0,0,0,20792792.3,1389063.28,0.0

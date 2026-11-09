@@ -1,0 +1,19 @@
+[
+  "emi_to_income_ratio",
+  "outstanding_to_loan_ratio",
+  "tenure_remaining",
+  "months_on_book",
+  "days_past_due",
+  "days_late",
+  "late_payments_last_3m",
+  "late_payments_last_6m",
+  "bounces_last_3m",
+  "bounces_last_6m",
+  "max_days_late_3m",
+  "mean_days_late_3m",
+  "max_days_late_6m",
+  "mean_days_late_6m",
+  "dpd_trend_3m",
+  "recent_deterioration_flag",
+  "new_loan_flag"
+]

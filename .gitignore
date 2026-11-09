@@ -1,0 +1,36 @@
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python byte-code and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# SQLite Databases & temporary files
+*.db
+*.sqlite3
+loanwatch.db
+
+# Environment variables & secrets
+.env
+.env.local
+.streamlit/secrets.toml
+secrets.toml
+
+# Operating system artifacts
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary and local logs
+*.log

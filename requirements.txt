@@ -1,0 +1,12 @@
+# LoanWatch - NBFC Early Warning System
+# Pinned dependencies for reproducible local runs and Streamlit Community Cloud deployment
+pandas==2.2.2
+numpy==1.26.4
+pyarrow==17.0.0
+scikit-learn==1.4.2
+joblib==1.4.2
+streamlit==1.36.0
+plotly==5.22.0
+matplotlib==3.8.4
+python-dateutil==2.9.0.post0
+pytest==8.2.2
